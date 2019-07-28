@@ -10,7 +10,8 @@
 					<textarea data-template>
 					# This is chapter 1
 				 	What a nice story is *this*
-				</textarea></section>
+				</textarea>
+			</section>
 					<section>
 						<section>Vertical Slide 1</section>
 						<section>Vertical Slide 2</section>
@@ -20,6 +21,25 @@
 		<script src="js/reveal.js"></script>
 		<script>
 			Reveal.initialize();
+					controls: true,
+					progress: true,
+					center: true,
+					hash: true,
+
+					transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+					// More info https://github.com/hakimel/reveal.js#dependencies
+					dependencies: [
+						{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+						{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+						{ src: 'plugin/highlight/highlight.js', async: true },
+						{ src: 'plugin/search/search.js', async: true },
+						{ src: 'plugin/zoom-js/zoom.js', async: true },
+						{ src: 'plugin/notes/notes.js', async: true }
+					]
+				});
+
+			</script>
 		</script>
 	</body>
 </html>
